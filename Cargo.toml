@@ -1,0 +1,39 @@
+[package]
+name = 'alloy-abirpc'
+version = '0.1.0'
+edition = '2021'
+license = 'MIT OR Apache-2.0'
+repository = 'https://github.com/solarpx/alloy-abirpc'
+homepage = 'https://github.com/solarpx/alloy-abirpc'
+categories = ['cryptography::cryptocurrencies']
+keywords = [
+    'crypto',
+    'ethers',
+    'ethereum',
+    'web3',
+    'celo',
+]
+description = 'alloy-rs provider encapsulation for ethereum smart contrcats'
+
+[dependencies]
+rustc-hex = '2.1.0'
+thiserror = '1.0.47'
+strum_macros = '0.25.2'
+url = '2.4.1'
+async-trait = '0.1.74'
+strum = '0.26.3'
+num_enum = '0.7.3'
+alloy-sol-macro = "0.7.7"
+alloy-rpc-client = "0.2.1"
+futures = "0.3.30"
+alloy-chains = "0.1.27"
+alloy-provider = "0.2.1"
+paste = "1.0.15"
+
+[dependencies.tokio]
+version = '1.29.1'
+features = ['full']
+
+[dependencies.alloy]
+version = '0.2.1'
+features = ['full']
